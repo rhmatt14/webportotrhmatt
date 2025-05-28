@@ -1,0 +1,331 @@
+
+/* General Styling */
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    color: #ffffff;
+    background: #47a4e2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #561df0;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background: #000000;
+    color: #f5e72d;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #e2e6f5 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #f5e72d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+    border-bottom: #e2e6f5 3px solid;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    object-fit: cover;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+}
+
+.hero-section h2 {
+    float: center;
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Sections General */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section:nth-of-type(even) {
+    background-color: #000000;
+    border-bottom: #e2e6f5 3px solid;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    margin: 10px auto 0;
+}
+
+/* About Section */
+.about-section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1em;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.skill-item {
+    background: #111111;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item h3 {
+    color: #f5e72d;
+    margin-top: 0;
+}
+
+/* Portfolio Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    border-bottom: #e2e6f5 3px solid;
+}
+
+.portfolio-item {
+    background: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(253, 253, 253);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    color: #f5e72d;
+    margin-top: 0;
+}
+
+.portfolio-item p {
+    font-size: 0.95em;
+    color: #fffafa;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+/* ... CSS yang sudah ada ... */
+
+/* Contact Icons Styling */
+.contact-icons {
+    margin-top: 30px;
+    display: flex; /* Gunakan flexbox untuk tata letak horizontal */
+    justify-content: center; /* Pusatkan ikon */
+    gap: 30px; /* Jarak antar ikon */
+}
+
+.contact-icon {
+    font-size: 40px; /* Ukuran ikon */
+    color: #466ef5; /* Warna ikon */
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Hapus garis bawah */
+}
+
+.contact-icon:hover {
+    color: #f7f8f8; /* Warna saat dihover */
+    transform: translateY(-5px); /* Efek sedikit naik saat dihover */
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    color: #f5e72d;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 780px) {
+    header h1,
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        padding-top: 10px;
+    }
+
+    header li {
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .skills-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Active Link Highlighting */
+header nav ul li a.active {
+    color: #77aaff; /* Warna yang berbeda untuk tautan aktif */
+    font-weight: bold;
+    border-bottom: 2px solid #77aaff; /* Garis bawah untuk penanda */
+}
+
+/* ... CSS yang sudah ada ... */
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none; /* Sembunyikan secara default */
+    position: fixed; /* Tetap di posisi yang sama saat di-scroll */
+    bottom: 30px; /* Jarak dari bawah */
+    right: 30px; /* Jarak dari kanan */
+    z-index: 99; /* Pastikan di atas elemen lain */
+    border: none; /* Hapus border */
+    outline: none; /* Hapus outline saat fokus */
+    background-color: #3498db; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    cursor: pointer; /* Ubah kursor saat di hover */
+    padding: 15px; /* Padding */
+    border-radius: 50%; /* Bentuk lingkaran */
+    font-size: 20px; /* Ukuran font panah */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+    background-color: #2980b9;
+}
+
+
+/* Dynamic Skill Bars (Opsional) */
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+    margin-top: 10px;
+    overflow: hidden; /* Penting untuk animasi */
+}
+
+.skill-progress {
+    background-color: #3498db;
+    height: 100%;
+    width: 0%; /* Mulai dari 0% untuk animasi */
+    border-radius: 5px;
+    transition: width 1.5s ease-out; /* Animasi lebar */
+}
+
+/* Kelas yang akan ditambahkan oleh JS untuk memicu animasi */
+.skill-progress.fill-progress {
+    /* Lebar akan diatur oleh JavaScript sesuai data-progress */
+}
